@@ -173,8 +173,8 @@ const Document: React.FC<DocumentProps> = withEmotionCache(
         <body>
           <ThemeProvider theme={theme}>
             <CssBaseline />
+            {children}
           </ThemeProvider>
-          {children}
           <RouteChangeAnnouncement />
           <ScrollRestoration />
           <Scripts />

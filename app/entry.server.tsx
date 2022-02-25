@@ -12,20 +12,6 @@ import { getTheme } from "~/themes";
 
 import type { EntryContext } from "remix";
 
-declare global {
-  namespace NodeJS {
-    interface ProcessEnv {
-      SUPABASE_URL: string;
-      SUPABASE_ANON_KEY: string;
-      SESSION_SECRET: string;
-      IMAGEKIT_PUBLIC_KEY: string;
-      IMAGEKIT_PRIVATE_KEY: string;
-      IMAGEKIT_URL_ENDPOINT: string;
-      IMAGEKIT_AUTH_ENDPOINT: string;
-    }
-  }
-}
-
 export default async function handleRequest(
   request: Request,
   responseStatusCode: number,
